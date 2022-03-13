@@ -1,0 +1,428 @@
+<!--Zavrsavanje ostalih dijelova na stranici da budu responive. Navigacijska traka, h1, slika profila i ostali elementi su vecinom 
+responsivi  --> 
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<style>
+
+@media (max-width: 1000px) { 
+h1 {font-size:20x;}
+}
+
+a:hover {
+font-weight: 800;
+}
+body {
+        font-family:  'Georgia';
+        margin: 50px;
+        padding: 2px;
+        background-color: rgb(170, 248, 181);
+    }
+    li {
+        marker: none;
+    }
+    /*!-- navigacijska traka */
+   
+        #navigacija
+    {
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Osnovne-informacije
+    {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #o-meni
+    {
+        background-color: rgb(196, 255, 225);
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        flex-direction: column;
+        margin-left: auto;
+        flex-wrap:wrap;
+        padding: 10px;
+    }
+
+    #Sposobnosti
+    {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        margin: 15px;
+        margin-bottom: 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #Iskustvo
+    {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+        margin: 15px;
+        flex-direction: column;
+
+
+    }
+    #Interesovanja
+    {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+flex-direction: column;
+
+
+
+    }
+    #Kontakt 
+    {
+        background-color: rgb(142, 215, 248);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slika {
+        margin-right: 10px;
+    }
+    .profilnaslika
+    {
+        width: auto;
+        border: 3px solid rgb(166, 186, 214);
+        border-radius: 600%;
+        height: 100px;
+    }
+    
+@media (max-width: 800px) { 
+#navigacija li {font-size:16px;}
+}
+@media (max-width: 800px) { 
+p {font-size:10px;}
+}
+
+    .veliki {
+display: flex;
+justify-content: space-around;
+    }
+    
+
+    @media (max-width: 601px) { 
+        .veliki {
+flex-direction: column;
+
+    }
+    .veliki ul {
+        padding: 20px;
+    }
+#Interesovanja ul {
+    align-self: flex-start;
+}
+#Sposobnosti ul {
+    align-self: flex-start;
+}
+.div3 {
+    align-self: flex-start;
+}
+
+}
+
+.responsive-img {
+
+max-width: 100%;
+  height: auto;
+}
+
+
+.lijevo
+{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.desno
+{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+
+    #navigacija ul {
+        flex-direction: row;
+        width: 90%;
+        max-width: 800px;
+        max-height: 100px;
+        min-height: 50px;
+        background-color: rgba(220, 211, 255, 0.85);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right:auto;
+        flex-wrap:wrap;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 10px; 
+    }
+
+    #navigacija li {
+       margin-right: 10px;
+    }
+ h1{
+     text-align: center;
+    
+    color:rgb(60, 66, 23);
+    
+
+ }
+ h2{
+         top:70px;
+     }
+ .glavni {
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(103, 177, 199, 0.8);
+        padding: 10px;
+    }
+    
+ quote{
+     color:rgb(54, 7, 39);
+     background-color:rgba(220, 211, 255, 0.85);
+
+ }
+
+span
+ {
+     color:rgb(90, 224, 0)
+    
+}
+
+    #footer {
+        background-color: #491f3b;
+        display: flex;
+        justify-content: center;
+    }
+    .p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.h3 {
+    text-align: center;
+    font-family: "Arial", "Courier New", monospace;
+    color:rgb(60, 66, 23);
+
+}
+
+
+</style>
+<head>
+    <meta charset="utf-8">
+<title>Haris Čizmić Resume</title>
+</head>
+
+    <body>
+        <header id="header">
+            <nav id="navigacija">
+                
+                <ul>
+                    <a href="#Školovanje">
+                        <li>Školovanje</li>
+                    </a>
+                    <a href="#Osnovne-informacije">
+                        <li>Osnovne informacije</li>
+                    </a>
+                    <a href="#o-meni">
+                        <li>O meni</li>
+                    </a>
+                    <a href="#Sposobnosti">
+                        <li>Sposobnosti</li>
+                    </a>
+                    <a href="#Iskustvo">
+                        <li>Iskustvo</li>
+                    </a>
+                    <a href="#Interesovanja">
+                        <li>Interesovanja</li>
+
+                        <a href="#Kontakt">
+                            <li>Kontakt</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <h1>Haris Čizmić Resume Webpage
+        </h1>
+
+        
+            <!-- za redanje stavki u redu, Div parent i 3 div child.-->
+
+           
+           <div class="glavni">  
+            <div class="mali1" id="Školovanje">
+
+         <h2> Osnovne informacije</h2>
+           
+        
+            <p><strong>Datum i mjesto rođenja: </strong>  13.09.1995. Recklinghausen</p> 
+            <p><strong> Adresa: </strong> ''Ulica Stjepana 2. Kotromanića 40, Srebrenik''</p>
+            <p><strong>Država: </strong> Bosna i Hercegovina</p>
+
+        
+        </div>
+        
+            <hr>
+        
+            <div class="slika">
+
+                <img class="profilnaslika responsive-img" src="https://i.ibb.co/9YFMj94/243312181-10219106314960881-4087674496554270619-n.jpg" alt="Profilna slika">
+                </div>
+        
+
+        <hr>
+<div  id="Školovanje" class="mali2">
+        <h3>Školovanje:</h3>
+        <p><strong>Gimnazija Srebrenik:</strong> 2010-2014</p>
+        <p><strong>Internacionalni univerzitet Brčko:</strong> Informatika 2017-</p>
+        <p><strong>Bild IT academy:  </strong> Februar 2022.-...</p>
+   
+</div>
+
+
+
+
+
+</div>
+
+
+<div  id="o-meni">
+
+        <h3 class="h3"><strong>Ukratko o meni</strong></h3>
+
+        <p class="p1">Završna sam godina studija informatike. Već 7 godina se bavim marketingom radeći preko Google Adsense platforme. Radio sam za nekoliko firma online marketing i oglašavanje preko društvenih mreža, čije web stranice sam ja pravio.</p>
+        </p>
+    </div>
+
+    <hr>
+   
+
+
+
+   
+   
+
+    <!-- za redanje stavki u redu, Div parent i 3 div child.-->
+  
+<div class="veliki">
+    <div class="lijevo" id="Iskustvo">
+    
+        
+            <h3><strong>Iskustvo:</strong> 
+            </h3> 
+            <div class="div3"><p><strong>Google adsense (2015-...)</strong></p> 
+            <h4>Google adsense</h4>
+            <p>(2015.-...)</p>
+            <h4>Web sajtovi</h4>
+            <p>(2015.- ...)</p>
+    </div>
+        </div>
+        <hr>
+
+
+        
+
+    
+
+        <div class="interesovanja" id="Interesovanja">
+        
+        
+            <h3>Lična interesovanja</h3>
+            
+                <ul>
+                <li>Košarka</li>
+                <li>Čitanje</li>
+                <li>Šah</li>
+               
+                <li>Fotografija</li>
+            
+        </div>
+        
+
+        <hr>
+
+        <div class="sposobnosti" id="Sposobnosti">
+        
+            <h3>Moje sposobnosti:</h3>
+            
+               <ul> 
+                   <li>Dosta iskustva u IT sektoru</li> 
+                 <li>Odgovornost za rad u timu</li>
+                 <li>Samopouzdanje za prilagođavanje u novim sredinama</li>
+                 <li>Spremnost na primanje i dijeljenje znanja sa kolegama</li>
+                 <li>Prihvatanje autoriteta i preuzimanje odgovornosti</li>
+            </ul>
+           
+        </div>
+        
+    
+</div>
+            
+        </ul>
+        </section>
+
+
+<div id="Kontakt" style="font-size: 26px;">
+            <h3 style="font-size: 46px;">Kontakt</h3>
+            <strong>Linkedin:</strong>
+        <a href="https://www.linkedin.com/in/haris-cizmic-249761230/ " LinkedIn>
+            LinkedIn
+        </a>
+            <p>
+                <strong>Broj telefona: </strong>  +387 603311234
+            </p>
+            <p>
+                <strong>Email: </strong>
+                haris.cizmic.ets@gmail.com
+            </p>
+
+</div>
+
+           
+            <footer id="footer">
+                <ul>
+                    <a href="#školovanje" <li>Školovanje</li></a>
+                    <a href="#Osnovne-informacije" <li>Osnovne informacije</li></a>
+                    <a href="#o-meni" <li>O meni</li></a>
+                    <a href="#sposobnosti" <li>Sposobnosti</li></a>
+                    <a href="#Iskustvo" <li>Iskustvo</li></a>
+                    <a href="#interesovanja" <li>Interesovanja</li></a>
+                    <a href="#kontakt" <li>Kontakt</li></a>
+                </ul>
+            </footer>
+
+            
+
+
+    </body>
+
+
+
+
+
+
+</html>
